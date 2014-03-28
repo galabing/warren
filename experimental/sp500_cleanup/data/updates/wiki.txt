@@ -1,0 +1,148 @@
+2014-03-21	-	WPX	WPX Energy Inx
+2014-03-21	+	GMCR	Keurig Green Mountain
+2014-01-24	-	LIFE	Life Technologies
+2014-01-24	+	TSCO	Tractor Supply Company
+2013-12-21	-	TER	Teradyne
+2013-12-21	-	JDSU	JDS Uniphase
+2013-12-21	-	ANF	Abercrombie & Fitch
+2013-12-21	+	MHK	Mohawk Industries
+2013-12-21	+	FB	Facebook
+2013-12-21	+	ADS	Alliance Data Systems
+2013-12-10	-	MOLX	Molex Inc.
+2013-12-10	+	GGP	General Growth Properties Inc.
+2013-12-02	-	JCP	J.C. Penney
+2013-12-02	+	ALLE	Allegion
+2013-11-13	-	NYX	NYSE Euronext
+2013-11-13	+	KORS	Michael Kors
+2013-10-21	-	DELL	Dell, Inc.
+2013-10-21	+	RIG	Transocean
+2013-09-20	-	SAI	SAIC
+2013-09-20	-	AMD	Advanced Micro Devices
+2013-09-20	+	VRTX	Vertex Pharmaceuticals
+2013-09-20	+	AME	Ametek
+2013-09-10	-	BMC	BMC Software
+2013-09-10	+	DAL	Delta Airlines
+2013-07-08	-	S	Sprint Nextel Corp.
+2013-07-08	+	NLSN	Nielsen Holdings
+2013-06-28	-	APOL	Apollo Group Inc.
+2013-06-28	+	FOXA	21st Century Fox
+2013-06-21	-	FHN	First Horizon
+2013-06-21	+	ZTS	Zoetis
+2013-06-06	-	HNZ	H. J. Heinz Company
+2013-06-06	+	GM	General Motors
+2013-05-23	-	DF	Dean Foods
+2013-05-23	+	KSU	Kansas City Southern
+2013-05-08	-	CVH	Coventry Health Care
+2013-05-08	+	MAC	Macerich
+2013-04-30	-	PCS	MetroPCS
+2013-04-30	+	REGN	Regeneron
+2013-02-15	-	BIG	Big Lots Inc.
+2013-02-15	+	PVH	PVH Corp.
+2012-12-31	-	FII	Federated Investors
+2012-12-31	+	ABBV	AbbVie
+2012-12-21	-	TIE	Titanium Metals
+2012-12-21	+	DLPH	Delphi Automotive
+2012-12-11	-	RRD	R.R. Donnelley
+2012-12-11	+	GRMN	Garmin Ltd.
+2012-12-03	-	CBE	Cooper Industries
+2012-12-03	+	DG	Dollar General
+2012-10-10	-	SUN	Sunoco Inc.
+2012-10-10	+	PETM	PetSmart, Inc.
+2012-10-02	-	ANR	Alpha Natural Resources
+2012-10-02	+	KRFT	Kraft Foods Group
+2012-10-01	-	LXK	Lexmark Int'l Inc
+2012-10-01	-	DV	DeVry, Inc.
+2012-10-01	+	PNR	Pentair Ltd.
+2012-10-01	+	ADT	ADT Corp
+2012-09-05	-	SHLD	Sears Holding Corporation
+2012-09-05	+	LYB	LyondellBasell
+2012-07-31	-	GR	Goodrich Corporation
+2012-07-31	+	ESV	Ensco plc
+2012-07-02	-	PGN	Progress Energy Inc
+2012-07-02	+	STX	Seagate Technology
+2012-06-29	-	SLE	Sara Lee Corp.
+2012-06-29	+	MNST	Monster Beverage
+2012-06-05	-	NVLS	Novellus Systems
+2012-06-05	+	LRCX	Lam Research
+2012-05-21	-	MMI	Motorola Mobility
+2012-05-21	+	ALXN	Alexion Pharmaceuticals
+2012-05-17	-	EP	El Paso Corp.
+2012-05-17	+	KMI	Kinder Morgan
+2012-04-23	-	SVU	Supervalu Inc.
+2012-04-23	+	PSX	Phillips 66
+2012-04-03	-	MHS	Medco Health Solutions Inc.
+2012-04-03	+	FOSL	Fossil, Inc.
+2012-03-13	-	CEG	Constellation Energy Group
+2012-03-13	+	CCI	Crown Castle International Corp.
+2011-12-31	-	CPWR	Compuware
+2011-12-31	+	WPX	WPX Energy Inc.
+2011-12-20	-	TLAB	Tellabs Inc.
+2011-12-20	+	TRIP	TripAdvisor Inc.
+2011-12-16	-	WFR	MEMC Electronic Materials Inc.
+2011-12-16	-	MWW	Monster Worldwide Inc.
+2011-12-16	-	AKS	AK Steel Holding Corp.
+2011-12-16	+	PRGO	Perrigo Co.
+2011-12-16	+	DLTR	Dollar Tree Inc.
+2011-12-16	+	BWA	BorgWarner Inc.
+2011-12-12	-	GAS	Nicor Inc.
+2011-12-12	+	GAS	AGL Resources Inc.
+2011-11-18	-	JNS	Janus Capital Group
+2011-11-18	+	CBE	Cooper Industries
+2011-10-31	-	ITT	ITT Corp.
+2011-10-31	+	XYL	Xylem Inc.
+2011-10-14	-	CEPH	Cephalon Inc.
+2011-10-14	+	TEL	TE Connectivity Ltd.
+2011-09-23	-	NSM	National Semiconductor Corp.
+2011-09-23	+	MOS	The Mosaic Company
+2011-07-05	-	MI	Marshall & Iisley Corp.
+2011-07-05	+	ACN	Accenture plc
+2011-06-30	-	RSH	RadioShack Corp.
+2011-06-30	+	MPC	Marathon Petroleum Corp
+2011-06-01	-	MEE	Massey Energy Company
+2011-06-01	+	ANR	Alpha Natural Resources, Inc.
+2011-04-27	-	NOVL	Novell, Inc.
+2011-04-27	+	CMG	Chipotle
+2011-04-01	-	GENZ	Genzyme Corp.
+2011-04-01	+	BLK	BlackRock
+2011-03-31	-	Q	Qwest Communications
+2011-03-31	+	EW	Edwards Lifesciences
+2011-02-28	-	MFE	McAfee Inc.
+2011-02-28	+	COV	Covidien Plc
+2011-02-25	-	AYE	Allegheny Energy Inc.
+2011-02-25	+	JOYG	Joy Global Inc.
+2010-12-17	-	ODP	Office Depot Inc.
+2010-12-17	-	NYT	The New York Times Co.
+2010-12-17	-	KG	King Pharmaceuticals Inc.
+2010-12-17	-	EK	Eastman Kodak Co.
+2010-12-17	+	NFX	Newfield Exploration Co.
+2010-12-17	+	NFLX	Netflix Inc.
+2010-12-17	+	FFIV	F5 Networks Inc.
+2010-12-17	+	CVC	Cablevision Systems Corp.
+2010-08-26	-	SII	Smith International Inc.
+2010-08-26	+	TYC	Tyco International Ltd.
+2010-07-14	-	MIL	Millipore Inc.
+2010-07-14	+	ACE	Ace Limited
+2010-06-30	-	STR	Questar Corp.
+2010-06-30	+	QEP	QEP Resources Inc
+2010-06-28	-	XTO	XTO Energy Inc.
+2010-06-28	+	KMX	CarMax, Inc.
+2010-04-29	-	BJS	BJ Services Company
+2010-04-29	+	CERN	Cerner Corp.
+2009-11-03	-	SGP	Schering-Plough Corp.
+2009-11-03	+	PCLN	Priceline.com
+2009-09-28	-	CBE	Cooper Industries Ltd.
+2009-09-28	+	ARG	Airgas Inc
+2008-06-10	-	ABK	Ambac Financial
+2008-06-10	+	LO	Lorillard Inc.
+2007-12-20	-	TRB	Tribune Co.
+2007-12-20	+	RRC	Range Resources
+2007-01-01	-	SBL	Symbol Technologies
+2007-01-01	+	AVB	AvalonBay Communities Inc.
+2000-12-05	-	OI	Owens-Illinois
+2000-12-05	-	GRA	W.R. Grace
+2000-12-05	-	CCK	Crown Holdings
+2000-12-05	-	BS	Bethlehem Steel
+2000-12-05	+	SBL	Symbol Technologies
+2000-12-05	+	INTU	Intuit
+2000-12-05	+	AYE	Allegheny Energy
+2000-12-05	+	ABK	Ambac Financial
