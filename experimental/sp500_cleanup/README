@@ -5,4 +5,5 @@ note:
 2. select tab "CONSTITUENTS"
 3. select "FULL CONSTITUENTS LIST >>", download file to data/raw.xls
 4. upload raw.xls to google docs, delete nodata rows, export to data/raw.tsv
+5. run collect_tickers.py to extract tickers
 
