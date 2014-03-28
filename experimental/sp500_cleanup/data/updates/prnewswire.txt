@@ -1,0 +1,22 @@
+# http://www.prnewswire.com/news-releases/standard--poors-announces-changes-to-us-indices-58248997.html
+2007-09-24	-	FDC	First Data
+2007-09-25	+	ICE	InterContinental Exchange
+2007-09-26	+	TSO	Tesoro
+2007-09-26	-	MXIM	Maxim Integrated Products
+2007-09-28	+	TDC	Teradata
+2007-09-28	-	NCR	NCR
+2007-10-01	+	EXPE	Expedia
+2007-10-01	-	SLR	Solectron
+# http://www.prnewswire.com/news-releases/standard--poors-announces-changes-to-us-indices-111631204.html
+2010-12-17	+	CVC	Cablevision Systems
+2010-12-17	+	FFIV	F5 Networks
+2010-12-17	+	NFLX	Netflix
+2010-12-17	+	NFX	Newfield Exploration
+2010-12-17	-	KG	King Pharmaceuticals
+2010-12-17	-	NYT	The New York Times
+2010-12-17	-	ODP	Office Depot
+2010-12-17	-	EK	Eastman Kodak
+# http://www.prnewswire.com/news-releases/standard--poors-announces-changes-to-us-indices-61761527.html
+2009-03-05	+	NU	Northeast Utilities
+2009-03-05	-	TYC	Tyco International
+
