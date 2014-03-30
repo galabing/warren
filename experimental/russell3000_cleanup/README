@@ -1,0 +1,34 @@
+raw file collection:
+- raw files were collected from web.archive.org, using static urls like:
+  - https://www.russell.com/indexes/documents/Membership/Russell3000_Membership_list.pdf
+  - http://russell.com/
+- one or two were collected from google history browser
+
+medium file generation:
+- for 2009/2010/2011/2012/2013.pdf, copy-paste the table portion to txt files
+- for 2008.html, nothing to do
+- for 2007.html, need the following fixes:
+  - break line 772 "BnHnA BenIHAnA InC" into two divs
+  - break line 1377 "CMCsA CoMCAsT CoRP" into two divs
+  - break line 2346 "GnCMA GeneRAL CoMMunICATIon" into two divs
+  - break line 4375 "PMACA PMA CAPITAL CoRP" into two divs
+  - break line 5952 "WTsLA WeT seAL InC" into two divs
+- for 2006.html, need the following fixes:
+  - break line 571 "AAWW  ATLAS AIR WORLDWIDE HLDG" into two divs
+  - break line 1370 "CMCSA  COMCAST CORP" into two divs
+  - break line 2325 "GNCMA  GENERAL COMMUNICATION" into two divs
+  - break line 3708 "MOG.A  MOOG INC" into two divs
+  - break line 3917 "NWS.A  NEWS CORP" into two divs
+  - break line 4144 "PMACA  PMA CAPITAL CORP" into two divs
+  - break line 4513 "QTWW  QUANTUM FUEL SYS TECH" into two divs
+- for 1997/2003/2004/2005/2006.pdf, copy-paste the table portion to txt files
+
+done file generation:
+- for 2013/2012/2011/2010/2009.pdf, use parse_membership_1.py
+- for 2008.html, use parse_membership_2.py
+- for 2006/2007.html, use parse_membership_3.py
+- for 1997/2003/2004/2005/2006.pdf, use parse_membership_4.py
+
+- 2006 is available from two sources, the pdf file offers more tickers, so the
+  output from that is used to produce 2006 tickers
+

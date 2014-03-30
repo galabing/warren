@@ -27,7 +27,7 @@ def collect_changes():
   # There are two tables on the page, first one listing the current sp500
   # tickers, second listing the changes.
   assert len(tables) == 2
-  rows = tables[1].findAll('tr')
+  rows = tables[1].find_all('tr')
   # First two rows:
   #      |       Added      |      Removed     |
   # Date | Ticker | Company | Ticker | Company | Reason
