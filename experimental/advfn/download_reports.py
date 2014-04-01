@@ -41,7 +41,7 @@ PAGE_STATUS_MESSAGES = {
   PageStatusEnum.NO_SELECTION: 'page contains no selection',
 }
 
-def download(ticker, start, output_dir, overwrite):
+def download(ticker, symbol, start, output_dir, overwrite):
   output_path = '%s/%s-%d.html' % (output_dir, ticker, start)
   if os.path.isfile(output_path):
     if not overwrite:
@@ -49,7 +49,7 @@ def download(ticker, start, output_dir, overwrite):
       return output_path
     os.remove(output_path)
   url = ('http://ih.advfn.com/p.php?pid=financials'
-         '&btn=quarterly_reports&symbol=%s&istart_date=%d' % (ticker, start))
+         '&btn=quarterly_reports&symbol=%s&istart_date=%d' % (symbol, start))
   args = [WGET, '-q', url, '-O', output_path]
   for i in range(WGET_RETRIES):
     if subprocess.call(args) == 0:
@@ -78,9 +78,9 @@ def get_page_count(page_path):
   hits = SELECT_DATE_PROG.findall(content[p:q])
   return max([int(hit[0]) for hit in hits]) + 1, PageStatusEnum.OK
 
-def download_and_get_page_count(ticker, start, output_dir, overwrite):
+def download_and_get_page_count(ticker, symbol, start, output_dir, overwrite):
   for i in range(CORRUPTION_RETRIES):
-    page_path = download(ticker, start, output_dir, overwrite)
+    page_path = download(ticker, symbol, start, output_dir, overwrite)
     if page_path is None:
       return 0, PageStatusEnum.FAILED
     page_count, status = get_page_count(page_path)
@@ -92,9 +92,9 @@ def download_and_get_page_count(ticker, start, output_dir, overwrite):
       os.remove(page_path)
   return 0, PageStatusEnum.CORRUPTED
 
-def download_ticker(ticker, output_dir, overwrite):
+def download_ticker(ticker, symbol, output_dir, overwrite):
   page_count, status = download_and_get_page_count(
-      ticker, 0, output_dir, overwrite)
+      ticker, symbol, 0, output_dir, overwrite)
   if status != PageStatusEnum.OK:
     print '!! failed to download/process first page: %s' % ticker
     return False
@@ -103,13 +103,15 @@ def download_ticker(ticker, output_dir, overwrite):
   for start in range(COLUMNS, page_count, COLUMNS):
     print 'downloading %s: %d' % (ticker, start)
     tmp, status = download_and_get_page_count(
-        ticker, start, output_dir, overwrite)
+        ticker, symbol, start, output_dir, overwrite)
     assert status == PageStatusEnum.OK
     assert tmp == page_count
+  return True
 
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('--ticker_file', required=True)
+  parser.add_argument('--map_dir')
   parser.add_argument('--output_dir', required=True)
   parser.add_argument('--overwrite', action='store_true')
   args = parser.parse_args()
@@ -117,6 +119,16 @@ def main():
   with open(args.ticker_file, 'r') as fp:
     tickers = fp.read().splitlines()
   print 'processing %d tickers' % len(tickers)
+
+  changed = dict()
+  if args.map_dir:
+    map_files = os.listdir(args.map_dir)
+    for map_file in map_files:
+      symbol1, symbol2 = map_file.split('_')
+      ticker1 = symbol1.replace('-', '.')
+      ticker2 = symbol2.replace('-', '.')
+      assert ticker1 not in changed
+      changed[ticker1] = ticker2
 
   for i in range(len(tickers)):
     ticker = tickers[i]
@@ -126,7 +138,11 @@ def main():
     if not os.path.isdir(output_dir):
       os.mkdir(output_dir)
 
-    download_ticker(ticker, output_dir, args.overwrite)
+    if (not download_ticker(ticker, ticker, output_dir, args.overwrite) and
+        ticker in changed):
+      print '=> trying changed ticker: %s => %s' % (ticker, changed[ticker])
+      ok = download_ticker(ticker, changed[ticker], output_dir, args.overwrite)
+      print '<= ok ?', ok
 
 if __name__ == '__main__':
   main()

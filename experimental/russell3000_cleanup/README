@@ -8,6 +8,8 @@ medium file generation:
 - for 2009/2010/2011/2012/2013.pdf, copy-paste the table portion to txt files
 - for 2008.html, nothing to do
 - for 2007.html, need the following fixes:
+  - break line 526 "ARDnA ARDen GRouP InC" into two divs
+  - break line 711 "BKunA BAnKunITeD fInAnCIAL" into two divs
   - break line 772 "BnHnA BenIHAnA InC" into two divs
   - break line 1377 "CMCsA CoMCAsT CoRP" into two divs
   - break line 2346 "GnCMA GeneRAL CoMMunICATIon" into two divs
